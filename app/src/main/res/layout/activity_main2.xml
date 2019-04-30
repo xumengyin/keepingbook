@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPayActivity">
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="add" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp" />
+
+
+    <cpsdna.myapplication.keepingbook.ui.view.ChooseTagView
+        android:id="@+id/testChooseTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:chooseTagColor="#00ff00"
+        app:chooseTagForground="?selectableItemBackground"
+        android:layout_marginTop="150dp"
+        app:chooseTagStrokeColor="#ff0000"
+        app:chooseTagStrokeSize="2dp"
+        app:chooseTagTextSize="16sp" />
+    <cpsdna.myapplication.keepingbook.ui.view.EventFilterView
+        android:id="@+id/filterview"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:color="#ff0000"
+        android:textColor="#00ff00"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tagFab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#ffffff"
+        app:pressedTranslationZ="0dp" />
+
+    <fragment
+        android:id="@+id/bottom_fragment"
+        class="cpsdna.myapplication.keepingbook.ui.fragment.AddTagBottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/peekHeight"
+        app:layout_behavior="cpsdna.myapplication.keepingbook.util.BottomSheetBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

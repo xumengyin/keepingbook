@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tagLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bottom_view_bg"
+    android:elevation="4dp"
+    android:translationZ="4dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tagHRecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/peekHeight"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+    <TextView
+        android:id="@+id/nodataTip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/peekHeight"
+        android:gravity="center"
+        android:text="暂无标签哦~"/>
+
+    <LinearLayout
+        android:id="@+id/tagMenuLayou"
+        android:layout_width="match_parent"
+        android:alpha="0"
+        android:layout_height="@dimen/peekHeight">
+
+        <TextView
+            android:id="@+id/deleteTag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="删除" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标签" />
+
+        <TextView
+            android:id="@+id/addTag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="创建" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tagRecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tagMenuLayou"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/addTag"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="添加标签" />-->
+</RelativeLayout>

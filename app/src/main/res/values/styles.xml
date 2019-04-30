@@ -8,4 +8,36 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="toolBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="TimeHeaders">
+        <item name="android:width">80dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="hourTextSize">24sp</item>
+        <item name="hourMinTextSize">16sp</item>
+        <item name="meridiemTextSize">12sp</item>
+    </style>
+    <style name="EventFilters">
+        <item name="android:padding">4dp</item>
+        <item name="android:strokeColor">?android:textColorTertiary</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="outlineWidth">1dp</item>
+        <item name="clearIcon">@drawable/tag_clear</item>
+        <item name="foreground">?selectableItemBackground</item>
+        <item name="showIcons">true</item>
+    </style>
 </resources>

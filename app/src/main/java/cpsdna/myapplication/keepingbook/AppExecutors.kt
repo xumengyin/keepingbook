@@ -41,6 +41,18 @@ open class AppExecutors(
         MainThreadExecutor()
     )
 
+    companion object {
+        private val app: AppExecutors by lazy {
+            AppExecutors()
+        }
+
+        val instance: AppExecutors
+            get() {
+                return app
+            }
+    }
+
+
     fun diskIO(): Executor {
         return diskIO
     }
